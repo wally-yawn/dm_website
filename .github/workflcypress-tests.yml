@@ -1,0 +1,25 @@
+name: Cypress End-to-End Tests
+
+on: [push, pull_request]
+
+jobs:
+  cypress-run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Install dependencies
+        run: npm ci
+
+      - uses: cypress-io/github-action@v6
+        with:
+          build: npm run build
+          start: npm run dev
+          wait-on: 'http://localhost:5173'  # Adjust if using a different port
+          wait-on-timeout: 60  # seconds
+          browser: chrome
+          headless: true
+          record: false  # set to true only if using Cypress Cloud
+          # recordKey: ${{ secrets.CYPRESS_RECORD_KEY }} # only needed if `record: true`
