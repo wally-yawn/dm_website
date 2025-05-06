@@ -44,7 +44,6 @@
 .nav_bar {
   display: flex;
   justify-content: space-evenly;
-  border: solid red 1px;
 }
 
 header {
