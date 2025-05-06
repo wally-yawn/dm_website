@@ -13,7 +13,7 @@ function App() {
       <header>
         <h1>The Deceitful Mind</h1>
       </header>
-      <nav>
+      <nav className='nav_bar'>
         <NavLink to="/shows" className="nav-element">Shows</NavLink>
         <NavLink to="/theband" className="nav-element">The Band</NavLink>
         <NavLink to="/songs" className="nav-element">Songs</NavLink>
