@@ -49,3 +49,7 @@
 header {
   max-height: 5em;
 }
+
+.card {
+  background-color: gray;
+}
