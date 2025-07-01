@@ -1,20 +1,24 @@
 import './ShowsContainer.css';
 import React, {useState, useEffect} from 'react';
 import Shows from "../Shows/Shows";
+import shows from '../data/shows.json';
 
 function ShowsContainer(){
 
-  const show1 = {
-    location: "Fraco's",
-    date: "June 12",
-    time: "9pm",
-    cover: "None"
-  }
-
   let allDMShows = null;
-
+  
+  const today = new Date();
+  
   const [allShows, setAllShows] = useState({
-    shows: [show1]
+    shows: shows.filter(show => {
+      const showDate = new Date(`${show.date} 00:00:00`);
+      today.setHours(0,0,0,0);
+      return showDate >= today;
+    }).sort((a,b) => {
+      const dateA = new Date(`${a.date} 00:00:00`);
+      const dateB = new Date(`${b.date} 00:00:00`);
+      return dateA - dateB;
+    })
   })
 
   if (allShows?.shows?.length > 0){
@@ -22,11 +26,13 @@ function ShowsContainer(){
       return (
         <Shows
           id={index}
+          title={show.title}
           key={index}
           location={show.location}
           date={show.date}
           time={show.time}
           cover={show.cover}
+          otherbands={show.otherbands}
         />
       )
     })
