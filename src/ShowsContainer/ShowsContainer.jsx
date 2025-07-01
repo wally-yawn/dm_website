@@ -1,6 +1,6 @@
 import './ShowsContainer.css';
 import React, {useState, useEffect} from 'react';
-import Shows from "../Shows/Shows";
+import Shows from '../Shows/Shows';
 import shows from '../data/shows.json';
 
 function ShowsContainer(){
@@ -39,7 +39,7 @@ function ShowsContainer(){
   }
 
   return(
-    <section className="shows-container">
+    <section className="container">
       <h2 className="sub-header">This is the shows container</h2>
       {allDMShows === null ? (
         <p>No upcoming shows, check back soon!</p> 

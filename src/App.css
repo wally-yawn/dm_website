@@ -53,3 +53,8 @@ header {
 .card {
   background-color: gray;
 }
+
+.container {
+  background-color: lightblue;
+  border: solid red;
+}
