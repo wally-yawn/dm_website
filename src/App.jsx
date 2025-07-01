@@ -19,7 +19,7 @@ function App() {
         <NavLink to="/songs" className="nav-element">Songs</NavLink>
       </nav>
       <Routes>
-        <Route path="/" element={<MainPage />}/>
+        <Route path="/" element={<ShowsContainer />}/>
         <Route path="/theband" element={<BandContainer />}/>
         <Route path="/songs" element={<SongsContainer />}/>
         <Route path="/shows" element={<ShowsContainer />}/>
