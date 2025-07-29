@@ -25,7 +25,6 @@ function SongsContainer(){
 
   return(
     <section className="container">
-      <h2>This is the songs container</h2>
       {allDMSongs}
     </section>
   )

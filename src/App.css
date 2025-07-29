@@ -34,7 +34,13 @@
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
   padding: 2em;
+  background-color: gray;
+  /* height: fit-content; */
+  border-radius: 5px;
+  border: thin solid black;
 }
 
 .read-the-docs {
@@ -43,18 +49,49 @@
 
 .nav_bar {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: stretch;
+  align-items: stretch;
+  font-size: large;
+  gap: 0;
+  padding-bottom: 0;
 }
 
-header {
-  max-height: 5em;
+header, nav {
+  max-height: 50m;
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 0;
 }
 
-.card {
-  background-color: gray;
+main {
+  flex: 1;
 }
 
 .container {
-  background-color: lightblue;
-  border: solid red;
+  /* background-color: #2d2e2e; */
+  padding-top: 1em;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  align-content: center;
+}
+
+.nav-element {
+  flex: 1 1 0;
+  background-color: #1e1f1f;
+  color: white;
+  padding: 5px;
+}
+
+.nav-element + .nav-element { border-left: thin solid black; }
+
+.nav-element:hover {
+  background-color: #444545;
+  color: white;
+}
+
+@media (max-width: 700px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
 }

@@ -14,16 +14,18 @@ function App() {
         <h1>The Deceitful Mind</h1>
       </header>
       <nav className='nav_bar'>
-        <NavLink to="/shows" className="nav-element">Shows</NavLink>
-        <NavLink to="/theband" className="nav-element">The Band</NavLink>
-        <NavLink to="/songs" className="nav-element">Songs</NavLink>
+        <NavLink to="/shows" className="nav-element">SHOWS</NavLink>
+        <NavLink to="/theband" className="nav-element">THE BAND</NavLink>
+        <NavLink to="/songs" className="nav-element">SONGS</NavLink>
       </nav>
-      <Routes>
-        <Route path="/" element={<ShowsContainer />}/>
-        <Route path="/theband" element={<BandContainer />}/>
-        <Route path="/songs" element={<SongsContainer />}/>
-        <Route path="/shows" element={<ShowsContainer />}/>
-      </Routes>
+      <main>
+        <Routes>
+          <Route path="/" element={<ShowsContainer />}/>
+          <Route path="/theband" element={<BandContainer />}/>
+          <Route path="/songs" element={<SongsContainer />}/>
+          <Route path="/shows" element={<ShowsContainer />}/>
+        </Routes>
+      </main>
     </>
   )
 }
