@@ -1,3 +1,28 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  width: 100%;
+  max-width: 100%;
+}
+
+img, video, canvas, svg, iframe {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.flex > *, .grid > *, .container > * {
+  min-width: 0; /* let flex/grid items shrink */
+}
+
+a, code, pre {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -82,3 +107,5 @@ button:focus-visible {
 .icon {
   max-height: 30px;
 }
+
+/* *{ outline: 1px solid rgba(255,0,0,.1); } */
