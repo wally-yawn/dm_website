@@ -15,13 +15,13 @@ function App() {
       </header>
       <nav className='nav_bar'>
         <NavLink to="/shows" className="nav-element">SHOWS</NavLink>
-        <NavLink to="/theband" className="nav-element">THE BAND</NavLink>
+        {/* <NavLink to="/theband" className="nav-element">THE BAND</NavLink> */}
         <NavLink to="/songs" className="nav-element">SONGS</NavLink>
       </nav>
       <main>
         <Routes>
           <Route path="/" element={<ShowsContainer />}/>
-          <Route path="/theband" element={<BandContainer />}/>
+          {/* <Route path="/theband" element={<BandContainer />}/> */}
           <Route path="/songs" element={<SongsContainer />}/>
           <Route path="/shows" element={<ShowsContainer />}/>
         </Routes>
