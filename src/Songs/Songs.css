@@ -12,3 +12,15 @@
   height: 100%;
   border: 0;
 }
+
+.links {
+  display: inline-flex;
+  flex-wrap: wrap;
+  column-gap: 1.5em;
+  justify-content: center;
+  list-style: none;
+}
+
+li:hover {
+  transform: scale(1.25);
+}
