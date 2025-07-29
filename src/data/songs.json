@@ -6,7 +6,7 @@
     "apple": "apple link",
     "amazon": "amazon link",
     "tidal": "tidal link",
-    "youtube": "https://www.youtube.com/watch?v=2caCJ3P8_Sc&list=OLAK5uy_ma0lNHhAsH1ZFP4R-05aL3e3sbe6uNX9E&index=2"
+    "youtube": "https://www.youtube.com/embed/2caCJ3P8_Sc?si=mt093vA0G6qCROAM"
   },
   {
     "title": "10 Pills",
@@ -15,7 +15,7 @@
     "apple": "apple link",
     "amazon": "amazon link",
     "tidal": "tidal link",
-    "youtube": "https://www.youtube.com/watch?v=4tMHAoq2T7Q&list=OLAK5uy_ma0lNHhAsH1ZFP4R-05aL3e3sbe6uNX9E"
+    "youtube": "https://www.youtube.com/embed/4tMHAoq2T7Q?si=XGbwLrsBiVYtoDzw"
   },
   {
     "title": "Insomnia",
@@ -24,7 +24,7 @@
     "apple": "apple link",
     "amazon": "amazon link",
     "tidal": "tidal link",
-    "youtube": "https://www.youtube.com/watch?v=smXd5jhra-g&list=OLAK5uy_ma0lNHhAsH1ZFP4R-05aL3e3sbe6uNX9E&index=3"
+    "youtube": "https://www.youtube.com/embed/smXd5jhra-g?si=B5lKVOXreoqReOth"
   },
   {
     "title": "Zombie (The Cranberries Cover)",
@@ -33,7 +33,7 @@
     "apple": "apple link",
     "amazon": "amazon link",
     "tidal": "tidal link",
-    "youtube": "https://www.youtube.com/watch?v=HpLW3tpZHaI&list=OLAK5uy_kM0gATdoOe2iQ-SgVMsmIkmX7fcEN47yM"
+    "youtube": "https://www.youtube.com/embed/HpLW3tpZHaI?si=OhvjLf6IIOzfrQ0p"
   },
   {
     "title": "Party all the Time (Eddie Murphy Cover)",
@@ -42,6 +42,6 @@
     "apple": "apple link",
     "amazon": "amazon link",
     "tidal": "tidal link",
-    "youtube": "https://www.youtube.com/watch?v=7HR5ouyZWQE&list=OLAK5uy_lELd-cO3LwLGNhfYAsfbNU8nKv_G7EmMY"
+    "youtube": "https://www.youtube.com/embed/7HR5ouyZWQE?si=7qS6Cqrpgf6dJoPH"
   }
 ]
