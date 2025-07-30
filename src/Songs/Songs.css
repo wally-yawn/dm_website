@@ -16,11 +16,16 @@
 .links {
   display: inline-flex;
   flex-wrap: wrap;
-  column-gap: 1.5em;
-  justify-content: center;
+  column-gap: 1em;
+  justify-content: flex-start;
+  padding-left: 0;
   list-style: none;
 }
 
 li:hover {
   transform: scale(1.25);
+}
+
+.icon {
+  max-height: 30px;
 }

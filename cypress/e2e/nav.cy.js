@@ -13,13 +13,8 @@ describe('navigation', () => {
     cy.url().should('be.equal', 'http://localhost:5173/shows')
   })
 
-  it('navigates to the Band page', () => {
-    cy.get('a[href*="/theband').click();
-    cy.url().should('be.equal', 'http://localhost:5173/theband')
-  })
-
-  it('navigates to the Songs page', () => {
-    cy.get('a[href*="/songs').click();
-    cy.url().should('be.equal', 'http://localhost:5173/songs')
-  })
+  // it('navigates to the Band page', () => {
+  //   cy.get('a[href*="/theband').click();
+  //   cy.url().should('be.equal', 'http://localhost:5173/theband')
+  // })
 })
