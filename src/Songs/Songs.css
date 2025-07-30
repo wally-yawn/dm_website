@@ -16,8 +16,9 @@
 .links {
   display: inline-flex;
   flex-wrap: wrap;
-  column-gap: 1.5em;
-  justify-content: center;
+  column-gap: 1em;
+  justify-content: flex-start;
+  padding-left: 0;
   list-style: none;
 }
 
@@ -26,5 +27,5 @@ li:hover {
 }
 
 .icon {
-  max-height: 35px;
+  max-height: 30px;
 }
