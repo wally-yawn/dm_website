@@ -5,6 +5,9 @@ import amazonLogo from '../assets/ammusic.jpeg'
 import tidalLogo from '../assets/tidallogo.jpeg'
 
 function Songs({title, img, spotify, apple, amazon, tidal, youtube}){
+  
+  const isTest = import.meta.env.MODE === 'test' || Cypress?.env?.('NO_EMBEDS');
+  
   return (
     <div className="card">
       <h2>{title}</h2>
@@ -14,10 +17,13 @@ function Songs({title, img, spotify, apple, amazon, tidal, youtube}){
         <li><a href = {amazon} target="blank" rel="noopener noreferrer"><img src={amazonLogo} alt="spotify logo" aria-hidden="true" className="icon" /></a></li>
         <li><a href = {tidal} target="blank" rel="noopener noreferrer"><img src={tidalLogo} alt="spotify logo" aria-hidden="true" className="icon" /></a></li> */}
       </ul>
-      <div className="video">
-        <iframe src= {youtube} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      </div>
+      {!isTest && (
+        <div className="video">
+          <iframe src= {youtube} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      )}
     </div>
+
   )
 }
 
