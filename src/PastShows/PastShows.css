@@ -1,0 +1,22 @@
+.past-show{
+  padding: 1em;
+  padding-top: 0%;
+  background-color: gray;
+  border-radius: 5px;
+  border: thin solid black;
+  margin: 1em;
+  margin-top: 0%;
+}
+
+.show-card{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+h2 {
+  color: black;
+}
+
+.details {
+  text-align: left;
+}
