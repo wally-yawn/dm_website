@@ -5,6 +5,16 @@
     "date": "June 12 2025",
     "time": "9pm",
     "cover": "None",
-    "otherbands": []
+    "otherbands": ["other1", "other2"],
+    "playlist": ""
+  },
+  {
+    "title": "The Deceitful Mind at Fraco's! 2",
+    "location": "Fraco's",
+    "date": "June 12 2027",
+    "time": "9pm",
+    "cover": "None",
+    "otherbands": [],
+    "playlist": ""
   }
 ]
