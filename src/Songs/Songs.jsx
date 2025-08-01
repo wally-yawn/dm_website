@@ -8,10 +8,7 @@ function Songs({title, img, spotify, apple, amazon, tidal, youtube}){
   
   // remove the embedded youtube during tests
   const noEmbedsFlag =
-    globalThis.Cypress?.env?.('NO_EMBEDS') ||
-    import.meta.env.VITE_NO_EMBEDS === 'true';
-
-  const isTest = import.meta.env.MODE === 'test' || noEmbedsFlag;
+    globalThis.Cypress?.env?.('TEST_DATA');
   
   return (
     <div className="card">
@@ -22,7 +19,7 @@ function Songs({title, img, spotify, apple, amazon, tidal, youtube}){
         {/* <li><a href = {amazon} target="blank" rel="noopener noreferrer"><img src={amazonLogo} alt="amazon logo" aria-hidden="true" className="icon" /></a></li> */}
         {/* <li><a href = {tidal} target="blank" rel="noopener noreferrer"><img src={tidalLogo} alt="tidal logo" aria-hidden="true" className="icon" /></a></li> */}
       </ul>
-      {!isTest && (
+      {!noEmbedsFlag && (
         <div className="video">
           <iframe src= {youtube} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
         </div>

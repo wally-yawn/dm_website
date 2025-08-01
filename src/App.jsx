@@ -10,7 +10,7 @@ import Home from './Home/Home';
 
 function App() {
 
-  const isTest = import.meta.env.MODE === 'test';
+  const isTest = globalThis.Cypress?.env?.('TEST_DATA');
   const data = !isTest ? shows : testShows;
 
   const today = new Date();
