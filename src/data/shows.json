@@ -2,19 +2,19 @@
   {
     "title": "The Deceitful Mind at Fraco's!",
     "location": "Fraco's",
-    "date": "June 12 2025",
+    "date": "June 12, 2024",
     "time": "9pm",
     "cover": "None",
     "otherbands": ["other1", "other2"],
     "playlist": ""
   },
   {
-    "title": "The Deceitful Mind at Fraco's! 2",
+    "title": "The Deceitful Mind at Fraco's!",
     "location": "Fraco's",
-    "date": "June 12 2027",
+    "date": "June 12, 2025",
     "time": "9pm",
     "cover": "None",
-    "otherbands": [],
+    "otherbands": ["other1", "other2"],
     "playlist": ""
   }
 ]
