@@ -1,6 +1,6 @@
-import './ShowsContainer.css';
+import './PastShowsContainer.css';
 import React, {useState, useEffect} from 'react';
-import Shows from '../Shows/Shows';
+import PastShows from '../PastShows/PastShows';
 import shows from '../data/shows.json';
 
 function ShowsContainer( {shows} ){
@@ -8,7 +8,7 @@ function ShowsContainer( {shows} ){
     <section className="container shows-container">
       <div className="show-cards">
         {shows.map((show, index) => (
-          <Shows
+          <PastShows
             key={index}
             title={show.title}
             location={show.location}
@@ -16,6 +16,7 @@ function ShowsContainer( {shows} ){
             time={show.time}
             cover={show.cover}
             otherbands={show.otherbands}
+            playlist={show.playlist}
           />
         ))}
       </div>

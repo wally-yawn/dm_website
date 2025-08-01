@@ -3,12 +3,11 @@ import spotifyLogo from '../assets/Spotify_Primary_Logo_RGB_Green.png'
 import appleLogo from '../assets/Apple Music_Symbol_0.svg'
 import amazonLogo from '../assets/ammusic.jpeg'
 import tidalLogo from '../assets/tidallogo.jpeg'
+import YoutubeEmbed from '../YoutubeEmbed/YoutubeEmbed'
 
 function Songs({title, img, spotify, apple, amazon, tidal, youtube}){
   
-  // remove the embedded youtube during tests
-  const noEmbedsFlag =
-    globalThis.Cypress?.env?.('TEST_DATA');
+  const noEmbedsFlag = globalThis.Cypress?.env?.('TEST_DATA');
   
   return (
     <div className="card">
@@ -20,9 +19,7 @@ function Songs({title, img, spotify, apple, amazon, tidal, youtube}){
         {/* <li><a href = {tidal} target="blank" rel="noopener noreferrer"><img src={tidalLogo} alt="tidal logo" aria-hidden="true" className="icon" /></a></li> */}
       </ul>
       {!noEmbedsFlag && (
-        <div className="video">
-          <iframe src= {youtube} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
-        </div>
+        <YoutubeEmbed url={youtube}/>
       )}
     </div>
   )

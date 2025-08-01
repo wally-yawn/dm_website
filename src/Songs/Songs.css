@@ -1,18 +1,3 @@
-.video {
-  position: relative;
-  padding-bottom: 56.25%; /* 16:9 */
-  height: 0;
-  overflow: hidden;
-}
-
-.video > iframe {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  border: 0;
-}
-
 .links {
   display: inline-flex;
   flex-wrap: wrap;
@@ -23,7 +8,7 @@
 }
 
 li:hover {
-  transform: scale(1.25);
+  transform: scale(1.2);
 }
 
 .icon {

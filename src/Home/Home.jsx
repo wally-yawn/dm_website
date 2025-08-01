@@ -1,5 +1,5 @@
 import './Home.css'
-import ShowsContainer from '../ShowsContainer/ShowsContainer';
+import ShowsContainer from '../PastShowsContainer/PastShowsContainer';
 
 function Home( {upcomingShows, youtubeEmbed} ){
   return (
