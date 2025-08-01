@@ -3,12 +3,12 @@ import React, {useState, useEffect} from 'react';
 import PastShows from '../PastShows/PastShows';
 import shows from '../data/shows.json';
 
-function PastShowsContainer( {shows} ){
+function UpcomingShowsContainer( {shows} ){
   return(
     <section className="container shows-container">
       <div className="show-cards">
         {shows.map((show, index) => (
-          <PastShows
+          <UpcomingShows
             key={index}
             title={show.title}
             location={show.location}
@@ -16,7 +16,6 @@ function PastShowsContainer( {shows} ){
             time={show.time}
             cover={show.cover}
             otherbands={show.otherbands}
-            playlist={show.playlist}
           />
         ))}
       </div>
@@ -24,4 +23,4 @@ function PastShowsContainer( {shows} ){
   )
 }
 
-export default PastShowsContainer;
+export default UpcomingShowsContainer;

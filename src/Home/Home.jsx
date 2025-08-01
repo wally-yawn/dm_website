@@ -4,8 +4,6 @@ import ShowsContainer from '../PastShowsContainer/PastShowsContainer';
 function Home( {upcomingShows, youtubeEmbed} ){
   return (
     <section className="home-container">
-      {console.log('upcomingShows: ', upcomingShows)}
-
       {upcomingShows.length < 1 ? (
         <p>No upcoming shows, check back soon!</p> 
       ) : (

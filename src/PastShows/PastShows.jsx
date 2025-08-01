@@ -18,7 +18,7 @@ function PastShows({title, otherbands, location, date, time, cover, playlist}){
           )} */}
         </div>
         <div className="embed">
-          {!noEmbedsFlag && (playlist !== null) && (
+          {!noEmbedsFlag && playlist && (
             <YoutubeEmbed url={playlist}/>
           )}
         </div>

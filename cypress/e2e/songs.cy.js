@@ -1,4 +1,4 @@
-describe('navigation', () => {
+describe('songs', () => {
 
   beforeEach(() => {
     cy.visit('/', { timeout: 10000 });
