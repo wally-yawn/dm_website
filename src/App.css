@@ -41,6 +41,7 @@
   /* height: fit-content; */
   border-radius: 5px;
   border: thin solid black;
+  margin: 1em;
 }
 
 .read-the-docs {
@@ -57,7 +58,7 @@
 }
 
 header, nav {
-  max-height: 50m;
+  /* max-height: 50m; */
   width: 100%;
   padding: 1rem;
   margin-bottom: 0;
@@ -94,4 +95,12 @@ main {
   .container {
     grid-template-columns: 1fr;
   }
+}
+
+header {
+  background-image: url('/assets/banner_image.png');
+  background-size: cover;
+  width: 100%;
+  aspect-ratio: 2.2 / 1;
+  background-position: center;
 }
