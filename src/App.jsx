@@ -3,7 +3,7 @@ import './App.css'
 import { Routes, Route, NavLink} from 'react-router-dom';
 // import BandContainer from './BandContainer/BandContainer';
 import SongsContainer from './SongsContainer/SongsContainer';
-import ShowsContainer from './ShowsContainer/ShowsContainer';
+import PastShowsContainer from './PastShowsContainer/PastShowsContainer';
 import shows from './data/shows.json';
 import testShows from './data/testShows.json';
 import Home from './Home/Home';
@@ -11,7 +11,7 @@ import Home from './Home/Home';
 function App() {
 
   const isTest = globalThis.Cypress?.env?.('TEST_DATA');
-  const data = isTest ? shows : testShows;
+  const data = !isTest ? shows : testShows;
 
   const today = new Date();
   today.setHours(0,0,0,0);
@@ -53,7 +53,7 @@ function App() {
           <Route path="/" element={<Home upcomingShows={upcomingShows.shows}/>}/>
           {/* <Route path="/theband" element={<BandContainer />}/> */}
           <Route path="/songs" element={<SongsContainer />}/>
-          <Route path="/pastshows" element={<ShowsContainer shows={pastShows.shows}/>}/>
+          <Route path="/pastshows" element={<PastShowsContainer shows={pastShows.shows}/>}/>
         </Routes>
       </main>
     </>
