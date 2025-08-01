@@ -5,30 +5,33 @@ import { Routes, Route, NavLink} from 'react-router-dom';
 import SongsContainer from './SongsContainer/SongsContainer';
 import ShowsContainer from './ShowsContainer/ShowsContainer';
 import shows from './data/shows.json';
+import testShows from './data/testShows.json';
 import Home from './Home/Home';
 
 function App() {
 
+  const isTest = import.meta.env.MODE === 'test';
+  const data = !isTest ? shows : testShows;
+
   const today = new Date();
-  
+  today.setHours(0,0,0,0);
+
   const [upcomingShows, setUpcomingShows] = useState({
-    shows: shows.filter(show => {
+    shows: data.filter(show => {
       const showDate = new Date(`${show.date} 00:00:00`);
-      today.setHours(0,0,0,0);
       return showDate >= today;
-    }).sort((a,b) => {
+    }).sort((a, b) => {
       const dateA = new Date(`${a.date} 00:00:00`);
       const dateB = new Date(`${b.date} 00:00:00`);
       return dateA - dateB;
     })
-  })
+  });
 
   const [pastShows, setPastShows] = useState({
-    shows: shows.filter(show => {
+    shows: data.filter(show => {
       const showDate = new Date(`${show.date} 00:00:00`);
-      today.setHours(0,0,0,0);
-      return showDate <= today;
-    }).sort((a,b) => {
+      return showDate < today;
+    }).sort((b,a) => {
       const dateA = new Date(`${a.date} 00:00:00`);
       const dateB = new Date(`${b.date} 00:00:00`);
       return dateA - dateB;

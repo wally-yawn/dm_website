@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Past show 1",
+    "location": "Fraco's",
+    "date": "June 12, 2025",
+    "time": "9pm",
+    "cover": "None",
+    "otherbands": [],
+    "playlist": ""
+  },
+  {
+    "title": "Past 2!",
+    "location": "The Moon",
+    "date": "June 12, 2024",
+    "time": "7pm",
+    "cover": "$10",
+    "otherbands": ["other1", "other2"],
+    "playlist": ""
+  },
+  {
+    "title": "Upcoming Show 1!",
+    "location": "Fraco's",
+    "date": "June 12, 2099",
+    "time": "9pm",
+    "cover": "None",
+    "otherbands": ["other1", "other2"],
+    "playlist": ""
+  },
+    {
+    "title": "Upcoming Show 2!",
+    "location": "Fraco's",
+    "date": "June 12, 2098",
+    "time": "9pm",
+    "cover": "$25",
+    "otherbands": [],
+    "playlist": ""
+  }
+]
