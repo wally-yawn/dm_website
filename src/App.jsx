@@ -11,7 +11,7 @@ import Home from './Home/Home';
 function App() {
 
   const isTest = globalThis.Cypress?.env?.('TEST_DATA');
-  const data = isTest ? shows : testShows;
+  const data = !isTest ? shows : testShows;
 
   const today = new Date();
   today.setHours(0,0,0,0);
