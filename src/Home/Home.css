@@ -1,0 +1,18 @@
+h2 {
+  color: white;
+}
+
+.home-container {
+  margin: 1em;
+  padding: 1em;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  /* background-color: 2d2e2e; */
+}
+
+.upcoming-shows, .news {
+  justify-content: top;
+  background-color: #363231;
+  /* padding: 1em; */
+  margin: 1em;
+}
