@@ -1,5 +1,5 @@
 import './Home.css';
-import ShowsContainer from '../PastShowsContainer/PastShowsContainer';
+import UpcomingShowsContainer from '../UpcomingShowsContainer/UpcomingShowsContainer';
 
 function Home({ upcomingShows, youtubeEmbed }) {
   return (
@@ -12,7 +12,7 @@ function Home({ upcomingShows, youtubeEmbed }) {
           </p>
         ) : (
           <section className="container shows-container">
-            <ShowsContainer shows={upcomingShows} />
+            <UpcomingShowsContainer shows={upcomingShows} />
           </section>
         )}
       </section>

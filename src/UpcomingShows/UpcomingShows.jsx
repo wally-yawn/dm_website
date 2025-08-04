@@ -3,7 +3,7 @@ import './UpcomingShows.css';
 function UpcomingShows({title, otherbands, location, date, time, cover}){
   
   return(
-    <section className="upcoming-show">
+    <section className="upcoming-show card">
       <h2>{title}</h2>
         <div className="details">
           <p>Where: {location}</p>

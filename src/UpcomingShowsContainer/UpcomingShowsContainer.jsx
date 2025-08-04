@@ -1,7 +1,5 @@
-import './PastShowsContainer.css';
-import React, {useState, useEffect} from 'react';
-import PastShows from '../PastShows/PastShows';
-import shows from '../data/shows.json';
+import './UpcomingShowsContainer.css';
+import UpcomingShows from '../UpcomingShows/UpcomingShows';
 
 function UpcomingShowsContainer( {shows} ){
   return(
