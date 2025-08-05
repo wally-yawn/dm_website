@@ -1,0 +1,19 @@
+h2 {
+  color: white;
+
+}
+
+.upcoming-shows, .news {
+  justify-content: top;
+  background-color: #363231;
+  border: thin solid black;
+  margin: 1em;
+}
+
+.home-container {
+  margin: 1em;
+  padding: 1em;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  /* background-color: #363231; */
+}
