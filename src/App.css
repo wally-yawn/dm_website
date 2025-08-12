@@ -103,6 +103,12 @@ header {
   width: 100%;
   aspect-ratio: 4.5 / 1;
   background-position: center;
+  align-items: left;
+  text-align: left;
+}
+
+header > ul {
+  list-style: none;
 }
 
 .video > iframe {

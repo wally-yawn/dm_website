@@ -15,7 +15,7 @@ function Songs({title, img, spotify, apple, amazon, tidal, youtube}){
       <ul className="links">
         <li><a href = {spotify} target="blank" rel="noopener noreferrer"><img src={spotifyLogo} alt="spotify logo" aria-hidden="true" className="icon" /></a></li>
         <li><a href = {apple} target="blank" rel="noopener noreferrer"><img src={appleLogo} alt="spotify logo" aria-hidden="true" className="icon" /></a></li>
-        {/* <li><a href = {amazon} target="blank" rel="noopener noreferrer"><img src={amazonLogo} alt="amazon logo" aria-hidden="true" className="icon" /></a></li> */}
+        <li><a href = {amazon} target="blank" rel="noopener noreferrer"><img src={amazonLogo} alt="amazon logo" aria-hidden="true" className="icon" /></a></li>
         {/* <li><a href = {tidal} target="blank" rel="noopener noreferrer"><img src={tidalLogo} alt="tidal logo" aria-hidden="true" className="icon" /></a></li> */}
       </ul>
       {!noEmbedsFlag && (

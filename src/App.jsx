@@ -7,6 +7,7 @@ import PastShowsContainer from './PastShowsContainer/PastShowsContainer';
 import shows from './data/shows.json';
 import testShows from './data/testShows.json';
 import Home from './Home/Home';
+import SocialContainer from './SocialContainer/SocialContainer';
 
 function App() {
 
@@ -41,9 +42,7 @@ function App() {
   return (
     <>
       <header className='banner'>
-        <div className='banner-socials'>
-          "this is the socials banner"
-        </div>
+        <SocialContainer />
       </header>
       <nav className='nav_bar'>
         <NavLink to="/" className="nav-element">HOME</NavLink>
