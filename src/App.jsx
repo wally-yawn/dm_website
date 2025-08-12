@@ -41,6 +41,9 @@ function App() {
   return (
     <>
       <header className='banner'>
+        <div className='banner-socials'>
+          "this is the socials banner"
+        </div>
       </header>
       <nav className='nav_bar'>
         <NavLink to="/" className="nav-element">HOME</NavLink>
