@@ -17,10 +17,10 @@ function Home({ upcomingShows, youtubeEmbed }) {
         )}
       </section>
       <section className="news">
-        <h2>News!</h2>
+        <h2>News</h2>
         <section className="card">
           <p>We're hard at work recording new music! Release date announcements coming soon!</p>
-          <img src='/assets/capybara.jpg'></img>
+          <img className="news-img" src='../assets/jess_recording.png'></img>
         </section>
       </section>
     </section>

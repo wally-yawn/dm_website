@@ -15,7 +15,7 @@ img, video, canvas, svg, iframe {
 }
 
 .flex > *, .grid > *, .container > * {
-  min-width: 0; /* let flex/grid items shrink */
+  min-width: 0;
 }
 
 a, code, pre {
@@ -40,7 +40,7 @@ a, code, pre {
 
 html, body, #root {
   height: 100%;
-  margin: 0;          /* remove default body margin */
+  margin: 0;
 }
 
 #root {
@@ -89,19 +89,6 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
 }
 
 /* *{ outline: 1px solid rgba(255,0,0,.1); } */
