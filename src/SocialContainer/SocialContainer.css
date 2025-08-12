@@ -1,0 +1,15 @@
+a:hover {
+  transform: scale(1.2);
+}
+
+.social-icon {
+  max-height: 40px;
+  padding-top: 5px;
+}
+
+.banner-socials {
+  display: grid;
+  max-width: 40px;
+  background-color: rgba(0,0,0,.6);
+  border-radius: 1px;
+}
