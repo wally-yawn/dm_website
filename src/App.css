@@ -123,6 +123,12 @@ header > ul {
 @media (max-width: 830px) {
   header {
     background-image: url('assets/mobile_banner.png');
-    aspect-ratio: 1.6 / 1;
+    aspect-ratio: 1.66 / 1;
+  }
+  .container {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      h2 {
+        font-size: 1.1em;
+      }
   }
 }
