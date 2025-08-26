@@ -95,7 +95,7 @@ header {
   position: relative;
   width: 100%;
   aspect-ratio: 4 / 1;
-  background-image: url('assets/banner_image.png');
+  background-image: url('/assets/banner_image.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center top;
@@ -122,7 +122,7 @@ header > ul {
 
 @media (max-width: 830px) {
   header {
-    background-image: url('assets/mobile_banner.png');
+    background-image: url('/assets/mobile_banner.png');
     aspect-ratio: 1.66 / 1;
   }
   .container {
