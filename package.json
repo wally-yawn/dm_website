@@ -28,6 +28,6 @@
     "eslint-plugin-react-refresh": "^0.4.24",
     "globals": "^16.5.0",
     "start-server-and-test": "^2.1.2",
-    "vite": "^7.1.12"
+    "vite": "^7.2.2"
   }
 }
