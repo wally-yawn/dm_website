@@ -1,5 +1,6 @@
 import './Home.css';
 import UpcomingShowsContainer from '../UpcomingShowsContainer/UpcomingShowsContainer';
+import YoutubeEmbed from '../YoutubeEmbed/YoutubeEmbed';
 
 function Home({ upcomingShows, youtubeEmbed }) {
   return (
@@ -22,8 +23,8 @@ function Home({ upcomingShows, youtubeEmbed }) {
       <section className="news">
         <h2>News</h2>
         <section className="card">
-          <p>We're hard at work recording new music! Release date announcements coming soon!</p>
-          <img className="news-img" src='../assets/jess_recording.jpeg'></img>
+          <p>We'll soon be announcing a release date for our song Tomorrow! For now, check out our live recording!</p>
+          <YoutubeEmbed url="https://www.youtube.com/embed/3NXcJH_QYBM?si=zCWfqTC4_isliXfn"></YoutubeEmbed>
         </section>
       </section>
     </section>
