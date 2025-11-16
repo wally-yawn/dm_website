@@ -24,8 +24,6 @@ describe('home page', () => {
 
     it('displays the news container', () =>{
       cy.get('.news .card')
-      .get('p').contains(`We're hard at work recording new music! Release date announcements coming soon!`)
-      .get('.news-img').should('have.attr', 'src')
-      .and('include', '/assets/jess_recording.png')
+      .get('p').contains(`We'll soon be announcing a release date for our song Tomorrow! For now, check out our live recording!`)
     })
 })

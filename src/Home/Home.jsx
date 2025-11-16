@@ -5,6 +5,13 @@ import YoutubeEmbed from '../YoutubeEmbed/YoutubeEmbed';
 function Home({ upcomingShows, youtubeEmbed }) {
   return (
     <section className="home-container">
+      <section className="news">
+        <h2>News</h2>
+        <section className="card">
+          <p>We'll soon be announcing a release date for our song Tomorrow! For now, check out our live recording!</p>
+          <YoutubeEmbed className='news-embed' url="https://www.youtube.com/embed/3NXcJH_QYBM?si=zCWfqTC4_isliXfn"></YoutubeEmbed>
+        </section>
+      </section>
       <section className="upcoming-shows">
         <h2>Upcoming Shows</h2>
         {upcomingShows.length < 1 ? (
@@ -19,13 +26,6 @@ function Home({ upcomingShows, youtubeEmbed }) {
             <UpcomingShowsContainer shows={upcomingShows} />
           </section>
         )}
-      </section>
-      <section className="news">
-        <h2>News</h2>
-        <section className="card">
-          <p>We'll soon be announcing a release date for our song Tomorrow! For now, check out our live recording!</p>
-          <YoutubeEmbed url="https://www.youtube.com/embed/3NXcJH_QYBM?si=zCWfqTC4_isliXfn"></YoutubeEmbed>
-        </section>
       </section>
     </section>
   );
